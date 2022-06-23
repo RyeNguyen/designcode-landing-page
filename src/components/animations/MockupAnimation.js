@@ -16,6 +16,15 @@ export default function MockupAnimation() {
 const Wrapper = styled.div`
   position: relative;
   perspective: 5000px;
+
+  @media (max-width: 768px) {
+    transform: scale(0.6);
+    transform-origin: top left;
+  }
+
+  @media (max-width: 450px) {
+    transform: scale(0.4);
+  }
   
   div {
     transform: rotateY(-20deg) rotateX(20deg);
